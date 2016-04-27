@@ -1,0 +1,47 @@
+<md-toolbar
+	class="navBar"
+>
+	<div class="md-toolbar-tools">
+
+		<div class="leftButton">
+			<md-button
+				ng-show="navigationBarService.backButton"
+				ng-click="goBack()"
+				aria-label="Voltar"
+				md-ripple-size="auto"
+				class="back-button md-icon-button"
+			>
+				<md-icon md-svg-icon="assets/icons/back.svg"></md-icon>
+				</md-icon>
+			</md-button>
+
+			<md-button
+				ng-show="navigationBarService.menuButton"
+				ng-click="toggleLeft($event)"
+				aria-label="Menu"
+				md-ripple-size="auto"
+				class="back-button md-icon-button"
+				hide-gt-md
+			>
+				<md-icon md-svg-icon="assets/icons/menu.svg"></md-icon>
+				</md-icon>
+			</md-button>
+		</div>
+
+		<h2 class="md-toolbar-tools">
+			{{navigationBarService.title}}
+		</h2>
+
+	</div>
+</md-toolbar>
+
+<md-button
+	ng-show="navigationBarService.fabButtonAdd"
+	ng-click="navigationBarService.fabButtonAdd()"
+	class="md-fab color2 float right bottom android-add"
+	aria-label="Adicionar">
+	<md-icon
+		md-font-icon="edm-icon-android-add"
+		aria-hidden="true">
+	</md-icon>
+</md-button>

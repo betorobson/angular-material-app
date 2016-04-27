@@ -1,0 +1,41 @@
+<md-sidenav
+	md-component-id="sidemenu"
+	md-is-locked-open="$mdMedia('gt-md')"
+	class="md-sidenav-left md-whiteframe-z2"
+	layout="column"
+	layout-fill
+	flex
+>
+	<md-toolbar class="navBar" hide-gt-md>
+		<div class="md-toolbar-tools">
+
+			<md-button
+				ng-click="close()"
+				aria-label="Menu"
+				md-ripple-size="auto"
+				class="md-icon-button"
+				hide-gt-md
+			>
+				<md-icon md-svg-icon="assets/icons/back.svg"></md-icon>
+				</md-icon>
+			</md-button>
+
+			<h1 class="md-toolbar-tools">Menu</h1>
+		</div>
+	</md-toolbar>
+
+  <md-menu-content flex width="4">
+
+    <md-menu-item
+    	ng-class="{'actived': item.go == sideMenuActivedItem}"
+    	ng-repeat="item in sideMenuItems"
+    >
+      <md-button ng-click="go(item.go,false)">
+      	<md-icon md-menu-align-target md-svg-icon="{{getIcon(item)}}"></md-icon>
+        {{item.label}}
+      </md-button>
+    </md-menu-item>
+
+  </md-menu-content>
+		
+</md-sidenav>
