@@ -9,9 +9,8 @@
 
 	<md-content flex md-scroll-y layout="column">
 	
-	<md-toolbar class="navBar" hide-gt-md>
+	<md-toolbar class="navBar" ng-class="{'iOS': iOS}" hide-gt-md>
 		<div class="md-toolbar-tools">
-
 			<md-button
 				ng-click="close()"
 				aria-label="Menu"
@@ -22,7 +21,6 @@
 				<md-icon md-svg-icon="assets/icons/back.svg"></md-icon>
 				</md-icon>
 			</md-button>
-
 			<h1 class="md-toolbar-tools">Menu</h1>
 		</div>
 	</md-toolbar>

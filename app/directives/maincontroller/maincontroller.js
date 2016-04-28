@@ -10,6 +10,8 @@
 		'$scope', '$timeout', '$mdSidenav', '$log', '$location',
 		function($scope, $timeout, $mdSidenav, $log, $location) {
 
+			$scope.iOS = /iPhone|iPad/.test(navigator.userAgent);
+			
 			// redirect between views
 			// used by ng-click
 			$scope.go = function(view, replace){
