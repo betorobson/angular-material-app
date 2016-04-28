@@ -6,6 +6,9 @@
 	layout-fill
 	flex
 >
+
+	<md-content flex md-scroll-y layout="column">
+	
 	<md-toolbar class="navBar" hide-gt-md>
 		<div class="md-toolbar-tools">
 
@@ -24,18 +27,32 @@
 		</div>
 	</md-toolbar>
 
-  <md-menu-content flex width="4">
+	<md-list flex="noshrink">
 
-    <md-menu-item
-    	ng-class="{'actived': item.go == sideMenuActivedItem}"
-    	ng-repeat="item in sideMenuItems"
-    >
-      <md-button ng-click="go(item.go,false)">
-      	<md-icon md-menu-align-target md-svg-icon="{{getIcon(item)}}"></md-icon>
-        {{item.label}}
-      </md-button>
-    </md-menu-item>
+		<md-list-item
+			ng-class="{'actived': item.go == sideMenuActivedItem}"
+			ng-repeat="item in sideMenuItems"
+			ng-click="go(item.go,false)"
+		>
+				<md-icon md-menu-align-target md-svg-icon="{{getIcon(item)}}"></md-icon>
+				<p>{{item.label}}</p>
+		</md-list-item>
 
-  </md-menu-content>
+	</md-list>
+
+	<md-divider></md-divider>
+
+	<md-list>
+		<md-list-item
+			ng-class="{'item-list-switch-on' : setting.enabled}"
+			ng-repeat="setting in settings"
+		>
+			<md-icon md-svg-icon="{{getIcon(setting)}}"></md-icon>
+			<p> {{ setting.name }} </p>
+			<md-switch class="md-warn" ng-model="setting.enabled"></md-switch>
+		</md-list-item>
+	</md-list>
+
+	</md-content>
 		
 </md-sidenav>

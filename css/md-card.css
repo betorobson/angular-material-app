@@ -1,0 +1,8 @@
+md-card[md-ink-ripple] {
+	position: relative;
+	cursor: pointer;
+}
+
+md-card[md-ink-ripple]:focus {
+	outline: none;
+}

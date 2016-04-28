@@ -24,6 +24,13 @@
 				}
 			];
 
+			$scope.settings = [
+				{
+					name: 'Notificações',
+					icon: 'notifications.svg',
+					enabled: true
+				}
+			];
 			$scope.getIcon = function(item){
 				return 'assets/icons/' + item.icon;
 			};
