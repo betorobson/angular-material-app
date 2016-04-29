@@ -9,8 +9,11 @@
 
 	<md-content flex md-scroll-y layout="column">
 	
-	<md-toolbar class="navBar" ng-class="{'iOS': iOS}" hide-gt-md>
-		<div class="md-toolbar-tools">
+	<md-toolbar class="navBar md-tall" ng-class="{'iOS': iOS}">
+		<div class="user-info" layout="column">
+			<img ng-src="assets/imgs/avatar.jpg" class="md-avatar" />
+			<h1 class="md-subhead">User First Name</h1>
+			<p class="md-body-1">username@email.com</p>
 			<md-button
 				ng-click="close()"
 				aria-label="Menu"
@@ -21,7 +24,6 @@
 				<md-icon md-svg-icon="assets/icons/back.svg"></md-icon>
 				</md-icon>
 			</md-button>
-			<h1 class="md-toolbar-tools">Menu</h1>
 		</div>
 	</md-toolbar>
 
@@ -41,6 +43,7 @@
 	<md-divider></md-divider>
 
 	<md-list>
+		<md-subheader class="md-no-sticky">Configurações</md-subheader>
 		<md-list-item
 			ng-class="{'item-list-switch-on' : setting.enabled}"
 			ng-repeat="setting in settings"
