@@ -29,9 +29,28 @@
 			</md-button>
 		</div>
 
-		<h2 class="md-toolbar-tools">
-			{{navigationBarService.title}}
+		<h2 flex class="md-toolbar-tools">
+			<span>{{navigationBarService.title}}</span>
 		</h2>
+
+		<div
+			flex="none"
+			class="rightButtons"
+		>
+
+			<md-button
+				ng-repeat="rightButton in navigationBarService.rightButtons"
+				ng-show="rightButton"
+				ng-click="rightButton.func($event)"
+				aria-label="right button"
+				md-ripple-size="auto"
+				class="md-icon-button"
+			>
+				<md-icon md-svg-icon="{{rightButton.icon}}"></md-icon>
+				</md-icon>
+			</md-button>
+
+		</div>
 
 	</div>
 </md-toolbar>

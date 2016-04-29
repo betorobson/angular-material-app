@@ -20,12 +20,15 @@
 
 	]);
 
-	app.config([
-		'$routeProvider',
+	app.config(
 		
 		function(
-			$routeProvider
+			$routeProvider,
+			$mdThemingProvider
 		){
+
+			$mdThemingProvider.theme('default')
+				.primaryPalette('blue-grey');
 
 			$routeProvider
 
@@ -42,6 +45,6 @@
 				.otherwise({redirectTo: '/home/'});
 
 		}
-	]);
+	);
 
 })();

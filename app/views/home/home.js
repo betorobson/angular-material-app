@@ -16,6 +16,27 @@
 			navigationBarService.setBackButton(false);
 			navigationBarService.setTitle('App Name');
 
+			var rightButton = {
+				icon: 'assets/icons/view_list.svg',
+				func: function(){
+					
+					if($scope.listLayout == 'column'){
+						$scope.listLayout = 'row';
+						rightButton.icon = 'assets/icons/dashboard.svg';
+					}else{
+						$scope.listLayout = 'column';
+						rightButton.icon = 'assets/icons/view_list.svg';
+					}
+
+				}
+			};
+
+			var setNavigationBarRightButtons = function(){
+				navigationBarService.rightButtons = [rightButton];				
+			};
+
+			$scope.listLayout = 'column';
+
 			$scope.items = [
 				{
 					title: 'Title 1',
@@ -66,6 +87,22 @@
 					description: 'Card description'
 				}
 			];
+
+			$scope.$on(
+				'$viewContentLoaded',
+				function(){
+					$timeout(setNavigationBarRightButtons, 0);
+				}
+			);
+
+			$scope.$on(
+				'$destroy',
+				function(){
+					$timeout(function(){
+						$scope.navigationBarService.rightButtons = false;
+					}, 0);
+				}
+			);
 
 		}
 	);

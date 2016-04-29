@@ -6,3 +6,13 @@ md-card[md-ink-ripple] {
 md-card[md-ink-ripple]:focus {
 	outline: none;
 }
+
+.view-home md-card .md-card-image {
+	height: 140px;
+	background-size: cover;
+	background-position: center;
+}
+
+.view-home md-card.layout-row .md-card-image {
+	width: 140px;
+}

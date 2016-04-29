@@ -1,13 +1,14 @@
 <div
 	layout="column"
+	layout-margin
 	flex="noshrink"	
-	class="gridListdemoBasicUsage"
-	
+	class="gridListdemoBasicUsage view-home"
 >
 
 	<div
 		layout="row"
 		layout-wrap
+		layout-fill
 	>
 
 		<div
@@ -17,8 +18,8 @@
 			flex-md="50"
 			flex-gt-md="33"
 		>
-			<md-card flex md-ink-ripple ng-click="go('view1', false)">
-				<md-card-header>
+			<md-card layout="{{listLayout}}" flex md-ink-ripple ng-click="go('view1', false)">
+				<md-card-header ng-show="listLayout == 'column'">
 					<md-card-avatar>
 						<md-icon 
 							class="md-avatar-icon"
@@ -31,7 +32,7 @@
 						<span class="md-subhead">{{item.subhead}}</span>
 					</md-card-header-text>
 				</md-card-header>
-				<img ng-src="assets/imgs/{{item.img}}" class="md-card-image">
+				<div style="background-image:url('assets/imgs/{{item.img}}')" class="md-card-image"></div>
 				<md-card-title>
 					<md-card-title-text>
 						<span class="md-headline">{{item.headline}}</span>

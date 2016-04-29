@@ -15,10 +15,25 @@ md-toolbar.navBar.iOS {
 	margin-left: -8px;
 }
 
+.navBar .rightButtons .md-button:last-child {
+	margin-right: -8px;
+}
+
 .navBar .md-button md-icon {
 	color: rgba(255, 255, 255, .87);
 }
 
 .navBar .md-button md-icon svg {
 	fill: rgba(255, 255, 255, .87);
+}
+
+.navBar h2 {
+	overflow: hidden;
+}
+
+.navBar h2 span {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }

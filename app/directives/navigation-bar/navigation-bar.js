@@ -51,6 +51,7 @@
 			show: false,
 			backButton: false,
 			menuButton: true,
+			rightButtons: false,
 			fabButtonAdd: false,
 			title: '',
 			color: '',

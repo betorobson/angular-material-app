@@ -35,30 +35,34 @@ side-menu md-sidenav md-toolbar.navBar {
 	max-height: 148px;
 }
 
+side-menu md-sidenav md-toolbar.navBar.iOS {
+	height: 168px;
+	min-height: 168px;
+	max-height: 168px;
+}
+
 side-menu .md-avatar {
-	width: 64px;
-	height: 64px;
+	width: 60px;
+	height: 60px;
 	border-radius: 100%;
-	box-shadow: 0px 1px 0px 1px rgba(0,0,0,.6);
+	box-shadow: 0px 1px 0px 1px rgba(0,0,0,.3);
 }
 
 side-menu .user-info {
 	position: relative;
-	margin: 20px 20px 0 20px;
+	margin: 20px 10px 0 20px;
 }
 
-side-menu .user-info .md-subhead {
-	font-weight: 700;
+side-menu .user-info .md-body-2 {
 	margin: 15px 0 0 0;
 	line-height: 1;
-	text-shadow: 0px 1px 0px 1px rgba(0,0,0,.6);
 }
 
 side-menu .user-info .md-body-1 {
 	margin: 0;
 }
 
-side-menu .user-info .md-icon-button {
+side-menu .user-info .md-icon-buttonx {
 	position: absolute;
 	top: 0;
 	right: 0;

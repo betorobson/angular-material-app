@@ -10,20 +10,42 @@
 	<md-content flex md-scroll-y layout="column">
 	
 	<md-toolbar class="navBar md-tall" ng-class="{'iOS': iOS}">
-		<div class="user-info" layout="column">
-			<img ng-src="assets/imgs/avatar.jpg" class="md-avatar" />
-			<h1 class="md-subhead">User First Name</h1>
-			<p class="md-body-1">username@email.com</p>
-			<md-button
-				ng-click="close()"
-				aria-label="Menu"
-				md-ripple-size="auto"
-				class="md-icon-button"
-				hide-gt-md
-			>
-				<md-icon md-svg-icon="assets/icons/back.svg"></md-icon>
-				</md-icon>
-			</md-button>
+		<div class="user-info" layout="row">
+			<div layout="column" flex>
+				<div><img ng-src="assets/imgs/avatar.jpg" class="md-avatar" /></div>
+				<p class="md-body-2">User First Name</p>
+				<p class="md-body-1">username@email.com</p>
+			</div>
+			<div layout="column">
+				<md-button
+					ng-click="close()"
+					aria-label="Menu"
+					md-ripple-size="auto"
+					class="md-icon-button"
+					hide-gt-md
+				>
+					<md-icon md-svg-icon="assets/icons/back.svg"></md-icon>
+					</md-icon>
+				</md-button>
+				<md-button
+					ng-click="close()"
+					aria-label="Menu"
+					md-ripple-size="auto"
+					class="md-icon-button"
+				>
+					<md-icon md-svg-icon="assets/icons/face.svg"></md-icon>
+					</md-icon>
+				</md-button>
+				<md-button
+					ng-click="close()"
+					aria-label="Menu"
+					md-ripple-size="auto"
+					class="md-icon-button"
+				>
+					<md-icon md-svg-icon="assets/icons/card_travel.svg"></md-icon>
+					</md-icon>
+				</md-button>
+			</div>
 		</div>
 	</md-toolbar>
 
