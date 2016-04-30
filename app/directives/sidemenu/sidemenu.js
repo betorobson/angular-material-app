@@ -18,6 +18,11 @@
 					go: 'home',
 				},
 				{
+					label: 'Mapa e GPS',
+					icon: 'place.svg',
+					go: 'maps',
+				},
+				{
 					label: 'View 1',
 					icon: 'card_travel.svg',
 					go: 'view1',

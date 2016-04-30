@@ -16,6 +16,7 @@
 		'directives.navigation-bar',
 
 		'views.home',
+		'views.maps',
 		'views.view1'
 
 	]);
@@ -27,14 +28,21 @@
 			$mdThemingProvider
 		){
 
+			// theme
 			$mdThemingProvider.theme('default')
 				.primaryPalette('blue-grey');
 
+			// routes
 			$routeProvider
 
 				.when('/home/', {
 					templateUrl: 'app/views/home/home.html',
 					controller: 'HomeCtrl as home'
+				})
+
+				.when('/maps/', {
+					templateUrl: 'app/views/maps/maps.html',
+					controller: 'MapsCtrl as maps'
 				})
 
 				.when('/view1/', {
