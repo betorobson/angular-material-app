@@ -17,6 +17,8 @@
 
 		'views.home',
 		'views.maps',
+		'views.picture',
+		'views.gallery',
 		'views.view1'
 
 	]);
@@ -43,6 +45,16 @@
 				.when('/maps/', {
 					templateUrl: 'app/views/maps/maps.html',
 					controller: 'MapsCtrl as maps'
+				})
+
+				.when('/picture/', {
+					templateUrl: 'app/views/picture/picture.html',
+					controller: 'PictureCtrl as picture'
+				})
+
+				.when('/gallery/', {
+					templateUrl: 'app/views/gallery/gallery.html',
+					controller: 'GalleryCtrl as gallery'
 				})
 
 				.when('/view1/', {

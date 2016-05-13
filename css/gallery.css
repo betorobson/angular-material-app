@@ -1,0 +1,8 @@
+.gallery-grid {
+	margin: 8px;
+}
+
+.gallery-picture {
+	background-size: cover;
+	background-position: center;
+}

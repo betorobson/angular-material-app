@@ -23,6 +23,16 @@
 					go: 'maps',
 				},
 				{
+					label: 'Camera',
+					icon: 'camera.svg',
+					go: 'picture',
+				},
+				{
+					label: 'Galeria',
+					icon: 'insert_photo.svg',
+					go: 'gallery',
+				},
+				{
 					label: 'View 1',
 					icon: 'card_travel.svg',
 					go: 'view1',

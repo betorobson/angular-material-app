@@ -17,11 +17,12 @@
 			$scope.go = function(view, replace){
 				$timeout(
 					(function(view, replace){
+						view  = '/' + view;
 						return function() {
 							if(replace)
-								$location.path(view).replace();
+								location.replace('#' + view);
 							else
-								$location.path(view);
+								location.hash = view;
 
 							if($mdSidenav('sidemenu').isOpen())
 								$scope.toggleLeft();							

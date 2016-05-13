@@ -11,7 +11,7 @@
 			navigationBarService
 		){
 
-			$rootScope.sideMenuActivedItem = 'view1';
+			$rootScope.sideMenuActivedItem = 'maps';
 
 			navigationBarService.setBackButton(true);
 			navigationBarService.setTitle('Mapa e GPS');
