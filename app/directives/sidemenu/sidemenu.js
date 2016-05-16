@@ -33,6 +33,16 @@
 					go: 'gallery',
 				},
 				{
+					label: 'Acelerômetro',
+					icon: 'accelerometer.svg',
+					go: 'accelerometer',
+				},
+				{
+					label: 'Bússola',
+					icon: 'compass.svg',
+					go: 'compass',
+				},
+				{
 					label: 'View 1',
 					icon: 'card_travel.svg',
 					go: 'view1',

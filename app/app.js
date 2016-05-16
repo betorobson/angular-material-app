@@ -15,10 +15,13 @@
 		'directives.sidemenu',
 		'directives.navigation-bar',
 
+		// views
 		'views.home',
 		'views.maps',
 		'views.picture',
 		'views.gallery',
+		'views.accelerometer',
+		'views.compass',
 		'views.view1'
 
 	]);
@@ -55,6 +58,16 @@
 				.when('/gallery/', {
 					templateUrl: 'app/views/gallery/gallery.html',
 					controller: 'GalleryCtrl as gallery'
+				})
+
+				.when('/accelerometer/', {
+					templateUrl: 'app/views/accelerometer/accelerometer.html',
+					controller: 'AccelerometerCtrl as accelerometer'
+				})
+
+				.when('/compass/', {
+					templateUrl: 'app/views/compass/compass.html',
+					controller: 'CompassCtrl as compass'
 				})
 
 				.when('/view1/', {
