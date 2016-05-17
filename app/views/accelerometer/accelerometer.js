@@ -46,6 +46,7 @@
 						x = x / 20;
 
 						$scope.css = {
+							'-webkit-transform': 'rotate(' + (360 * x) + 'deg)',
 							transform: 'rotate(' + (360 * x) + 'deg)'
 						};
 

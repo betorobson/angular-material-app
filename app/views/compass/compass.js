@@ -29,6 +29,7 @@
 						);
 
 						$scope.css = {
+							'-webkit-transform': 'rotate(' + Math.round(360 - heading.magneticHeading) + 'deg)',
 							transform: 'rotate(' + Math.round(360 - heading.magneticHeading) + 'deg)'
 						};
 
