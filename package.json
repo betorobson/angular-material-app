@@ -1,0 +1,33 @@
+{
+  "name": "ui-challenge",
+  "description": "UI Challenge",
+  "version": "1.0.0",
+  "author": "Roberto Robson",
+  "scripts": {
+    "install": "node install.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ctrl-c": "^2.2.7",
+    "del": "^2.2.2",
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^1.9.1",
+    "gulp-compile-handlebars": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-debug": "^3.1.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-open": "^1.0.0",
+    "gulp-order": "^1.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sequence": "^0.4.6",
+    "gulp-sourcemaps": "^1.11.1",
+    "gulp-strip-comments": "^2.4.4",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^1.5.4",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.4",
+    "pushstate-server": "^3.0.0"
+  }
+}
