@@ -12,7 +12,7 @@ module.exports = function(gulp, modules){
 			},
 			function(event){
 				modules.watchConsoleMessage(event);
-				gulp.start('index');
+				gulp.start('indexHTML');
 			}
 		);
 

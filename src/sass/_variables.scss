@@ -1,9 +1,4 @@
 
-// media queries
-$breakpointMobile: 992px;
-$mediaMobile: "only screen and (max-width: " + ($breakpointMobile - 1) + ")";
-$mediaDesktop: "only screen and (min-width: " + $breakpointMobile + ")";
-
 // font
 $fontsSrc: '../assets/fonts/';
 
@@ -25,21 +20,3 @@ $fonts:
 
 	('Roboto', 'roboto-black', '900', 'normal'),
 	('Roboto', 'roboto-blackitalic', '900', 'italic');
-
-// Colors
-$color1: #2c3e50;
-	$color1hue1: #202f3e;
-	$color1hue2: #2dafe6;
-
-$color2: #28b17f;
-	$color2hue1: #ff5a5f;
-	$color2hue2: #444747;
-
-$color3: #e1eae6;
-	$color3hue1: #ecefee;
-	$color3hue2: #fffcee;
-
-$colors:
-		(1, $color1, $color1hue1, $color1hue2),
-		(2, $color2, $color2hue1, $color2hue2),
-		(3, $color3, $color3hue1, $color3hue2);
