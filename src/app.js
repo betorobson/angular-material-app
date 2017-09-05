@@ -19,6 +19,7 @@
 
 		// directives
 		'directives.mainController',
+		'directives.navigation-bar'
 
 		// views
 		// 'views.home'

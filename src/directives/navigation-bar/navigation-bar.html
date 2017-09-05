@@ -1,0 +1,30 @@
+<md-toolbar>
+	<div class="md-toolbar-tools">
+
+		<md-button
+			ng-click="toggleSideMenu($event)"
+			aria-label="Menu"
+			md-ripple-size="auto"
+			class="md-icon-button"
+			xhide-gt-md
+		>
+			<md-icon md-svg-icon="assets/icons/menu.svg"></md-icon>
+		</md-button>
+
+		<h2 flex class="md-toolbar-tools">
+			{{navigationBarTitle()}}
+		</h2>
+
+	</div>
+</md-toolbar>
+
+<md-button
+	ng-show="navigationBarService.fabButton"
+	ng-click="navigationBarService.fabButton.func($event)"
+	class="md-fab md-fab-bottom-right color2"
+	aria-label="Adicionar">
+	<md-icon
+		class="{{navigationBarService.fabButton.icon}}"
+		aria-hidden="true">
+	</md-icon>
+</md-button>
