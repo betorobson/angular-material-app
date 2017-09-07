@@ -21,25 +21,6 @@
 			//  sideMenu: true
 			// },
 
-			home: {
-				path: '/home/',
-				label: 'Home',
-				icon: 'home.svg',
-				sideMenu: true
-			},
-
-			about: {
-				path: '/about/',
-				label: 'About me',
-				icon: 'contact.svg',
-				sideMenu: true
-			},
-
-			no: {
-				path: '/no/',
-				label: 'No'
-			}
-
 		};
 
 		var self = this;
