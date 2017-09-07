@@ -1,0 +1,46 @@
+
+<div
+	layout-column
+	layout-padding
+>
+	<h1 class="md-display-3">
+		Welcome to UI-Challenge
+	</h1>
+	<h2 class="md-display-1">
+		Part 1
+	</h2>
+
+	<div
+		layout-column
+	>
+		<p class="md-headline">
+			This project will provide you two features:
+		</p>
+		<ul
+			layout-xs="column"
+			layout-sm="column"
+			layout-gt-sm="row"
+			layout-margin
+			layout-padding
+			class="no-padding no-margin"
+		>
+			<li flex class="md-subhead" md-whiteframe="4">
+				You can see your current location on the map;
+			</li>
+			<li flex class="md-subhead" md-whiteframe="4">
+				You can find a website location and display it on the map;
+			</li>
+		</ul>
+		<div
+			layout="column"
+		>
+			<md-button
+				class="md-raised md-primary md-custom-fat-button"
+				ng-click="mainController.go('location')"
+			>
+				Let's try it!
+			</md-button>
+		</div>
+	</div>
+
+</div>
