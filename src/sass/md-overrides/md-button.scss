@@ -1,7 +1,17 @@
 
-a.md-icon-button,
-.md-icon-button {
-	svg {
-		fill: currentColor;
+.md-button {
+
+	// set svg fill icon colors based on button
+	&.md-icon-button {
+		svg {
+			fill: currentColor;
+		}
 	}
+
+	// remove hover behavior on mobile devices
+	main-controller[device=mobile] &:not([disabled]):hover {
+		background: transparent;
+	}
+
 }
+

@@ -19,11 +19,20 @@
 
 		// directives
 		'directives.mainController',
-		'directives.navigation-bar'
+		'directives.navigation-bar',
+		'directives.side-menu'
 
 		// views
 		// 'views.home'
 
-	]);
+	])
+
+	.config(function($mdThemingProvider){
+	  $mdThemingProvider.theme('default')
+	    .primaryPalette('teal')
+	    .accentPalette('orange');
+	})
+
+	;
 
 })();

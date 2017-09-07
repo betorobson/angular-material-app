@@ -1,0 +1,52 @@
+
+<md-sidenav
+	side-menu
+	md-component-id="{{componentId}}"
+	md-is-locked-open="$mdMedia('gt-md')"
+	class="md-sidenav-left"
+	md-whiteframe="4"
+	layout="column"
+>
+
+	<md-content flex layout="column">
+
+		<md-button
+			hide-gt-md
+			class="close-side-menu md-icon-button"
+			aria-label="Close side menu"
+			ng-click="closeSideMenu()"
+		>
+			<md-icon md-svg-icon="/assets/icons/arrow-left.svg"></md-icon>
+		</md-button>
+
+		<img
+			class="logo"
+			src="/assets/imgs/maps-and-flags.svg"
+		/>
+
+		<h1 class="md-headline">
+			UI Challenge
+		</h1>
+
+		<md-list
+			flex="noshrink"
+		>
+
+			<md-list-item
+				ng-repeat="item in sideMenuItens"
+				md-colors="isSideMenuItemActive(item)"
+				ng-click="mainController.go(item.path)"
+				class="active md-no-focus"
+			>
+				<md-icon
+					md-menu-align-target
+					md-svg-src="/assets/icons/{{item.icon}}"
+				></md-icon>
+				<p flex>{{item.label}}</p>
+			</md-list-item>
+
+		</md-list>
+
+	</md-content>
+
+</md-sidenav>
