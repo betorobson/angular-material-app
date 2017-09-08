@@ -25,7 +25,9 @@ module.exports = function(gulp, modules){
 		};
 
 		return gulp.src(globMatchFiles)
-			.pipe(modules.handlebars(data))
+			.pipe(modules.handlebars(data, {
+				ignorePartials: true
+			}))
 			.pipe(gulp.dest(modules.config.getDirDest()));
 	};
 };

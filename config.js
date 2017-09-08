@@ -3,6 +3,7 @@
 
 var config = {
 	timestamp: Date.now(),
+	googleMapsKey: 'AIzaSyCRXrHeiZf654pjQGDSuKuWesgEMB73g3Q',
 
 	dev: true,
 

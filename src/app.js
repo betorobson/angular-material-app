@@ -23,7 +23,8 @@
 		'directives.side-menu',
 
 		// views
-		'views.home'
+		'views.home',
+		'views.location'
 
 	])
 
