@@ -1,5 +1,5 @@
 
-main-controller {
+main-controller[view=location] {
 
 	&[device=desktop] {
 		.map-wrapper {
@@ -11,6 +11,10 @@ main-controller {
 		.map-wrapper {
 			height: 300px;
 		}
+	}
+
+	.map-form {
+		height: 110px;
 	}
 
 	.map-wrapper {

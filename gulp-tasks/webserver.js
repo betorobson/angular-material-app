@@ -35,7 +35,7 @@ module.exports = function(gulp, modules){
 			'Serving files on ' + url.url
 		);
 
-		return server.start({
+		server.start({
 			port: url.port,
 			directory: './' + (modules.config.dev ? 'debug' : 'build')
 		});

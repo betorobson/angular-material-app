@@ -9,14 +9,18 @@
 	<div
 		flex-xs
 		flex-sm
-		flex-gt-sm="75"
+		flex-gt-sm="70"
 		layout="column"
 	>
-		<h2 class="md-title">
-			Find a website location
-		</h2>
+		<div
+			flex="none"
+			layout="column"
+			class="map-form"
+		>
 
-		<div>
+			<h2 class="md-title">
+				Find a website location
+			</h2>
 
 			<form layout="row" name="websiteForm">
 				<md-input-container class="md-block" flex>
@@ -33,9 +37,9 @@
 					</div>
 				</md-input-container>
 
-	      <md-button
-	      	type="submit"
-	      	ng-disabled="websiteForm.$invalid"
+				<md-button
+					type="submit"
+					ng-disabled="websiteForm.$invalid"
 					class="md-accent md-raised"
 					ng-click="getWebsiteLocation()"
 				>
@@ -67,6 +71,7 @@
 				flex
 				layout="row"
 				layout-align="center center"
+				layout-padding
 				class="md-title error"
 			>
 				<span>Sorry, website location is not available.</span>
@@ -79,18 +84,43 @@
 	</div>
 
 	<div
-		flex
+		flex-xs
+		flex-sm
+		flex-gt-sm="30"
 		layout="column"
 	>
-		<h2 class="md-title">
-			See your current location on the map
-		</h2>
-		<md-button
-			class="md-accent md-raised"
-			ng-click="getLocation()"
+
+		<div
+			flex="none"
+			layout="column"
+			class="map-form"
 		>
-			My Location
-		</md-button>
+
+			<h2 class="md-title">
+				See your location
+			</h2>
+
+			<div
+				flex="none"
+				layout="row"
+			>
+				<md-button
+					flex
+					class="md-accent md-raised"
+					ng-click="getLocation()"
+				>
+					My Location
+				</md-button>
+				<md-button
+					flex
+					class="md-raised"
+					ng-click="resetLocation()"
+				>
+					Reset
+				</md-button>
+			</div>
+
+		</div>
 
 		<div
 			layout="row"
@@ -114,6 +144,7 @@
 				flex
 				layout="row"
 				layout-align="center center"
+				layout-padding
 				class="md-title error"
 			>
 				<span>Sorry, your location is not available.</span>
