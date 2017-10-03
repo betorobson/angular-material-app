@@ -1,0 +1,24 @@
+
+main-controller {
+
+	&[device=desktop] {
+		.map-wrapper {
+			height: 600px;
+		}
+	}
+
+	&[device=mobile] {
+		.map-wrapper {
+			height: 300px;
+		}
+	}
+
+	.map-wrapper {
+
+		.error {
+			background-color: #ccc;
+		}
+
+	}
+
+}
