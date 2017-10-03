@@ -9,10 +9,13 @@
 		'ViewHomeController',
 
 		function(
-			path
+			path,
+			navigationBarFactory
 		){
 
 			path.setCurrent('home');
+
+			navigationBarFactory.setTitle(path.getCurrent().label);
 
 		}
 	);

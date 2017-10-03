@@ -72,9 +72,7 @@
 
 		self.setCurrent = function(view){
 			self.currentKey = view || 'home';
-			// if(rootScope.mainController.setViewAttribute){
-			// 	rootScope.mainController.setViewAttribute();
-			// }
+			rootScope.mainController.setViewAttribute();
 		};
 
 		self.getPaths = function(){

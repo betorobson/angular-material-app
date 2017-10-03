@@ -30,7 +30,7 @@
 			// do NOT call it by yourself
 			var setViewAttribute = function(){
 
-				$($element).attr(
+				angular.element($element).attr(
 					'view',
 					path.getCurrentViewName()
 				);
