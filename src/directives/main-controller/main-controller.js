@@ -25,8 +25,6 @@
 					$location.path(view);
 			};
 
-			console.log('main-controller');
-
 			// automatically invoked by provider.path.setCurrent(name)
 			// do NOT call it by yourself
 			var setViewAttribute = function(){

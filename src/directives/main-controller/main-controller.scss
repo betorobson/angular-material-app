@@ -1,6 +1,8 @@
 
 main-controller {
-	h1 {
-		color: #fff;
-	}
+
+	> md-content.not-scrollable {
+			overflow: hidden;
+		}
+
 }
