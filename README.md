@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-=======
-# Roberto Robson ui-challenge
+# Angular Material App Seed
 
 ## Prerequisites
 
@@ -59,4 +57,3 @@ Files will be created at /debug folder
 $ gulp build
 ```
 Files will be created at /build folder
->>>>>>> d6fb31a... rr/skeleton-app (pull request #1)
