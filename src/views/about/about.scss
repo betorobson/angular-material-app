@@ -1,0 +1,23 @@
+
+main-controller[view=about] {
+
+	md-card-title-media {
+		margin-right: 15px;
+	}
+
+	.picture {
+		width: 150px;
+		height: 150px;
+	}
+
+	.md-button {
+		text-align: left;
+	}
+
+	md-card-content {
+		p {
+			margin-bottom: 25px;
+		}
+	}
+
+}

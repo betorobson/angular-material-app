@@ -24,7 +24,8 @@
 
 		// views
 		'views.home',
-		'views.location'
+		'views.location',
+		'views.about'
 
 	])
 
