@@ -1,0 +1,128 @@
+
+<div
+	layout-xs="column"
+	layout-sm="column"
+	layout-gt-sm="row"
+	layout-padding
+>
+
+	<div
+		flex-xs
+		flex-sm
+		flex-gt-sm="75"
+		layout="column"
+	>
+		<h2 class="md-title">
+			Find a website location
+		</h2>
+
+		<div>
+
+			<form layout="row" name="websiteForm">
+				<md-input-container class="md-block" flex>
+					<label>URL</label>
+					<input
+						name="websiteURL"
+						ng-model="websiteMapModel.url"
+						ng-pattern="/^(?!.+:\/\/).+\..+/"
+						required
+					/>
+
+					<div ng-messages="websiteForm.websiteURL.$error">
+						<div ng-message="pattern">Invalid URL, do not type http://</div>
+					</div>
+				</md-input-container>
+
+	      <md-button
+	      	type="submit"
+	      	ng-disabled="websiteForm.$invalid"
+					class="md-accent md-raised"
+					ng-click="getWebsiteLocation()"
+				>
+					Find
+				</md-button>
+			</form>
+
+		</div>
+
+		<div
+			layout="row"
+			class="map-wrapper"
+		>
+
+			<div
+				ng-if="websiteMap.loading"
+				flex
+				layout="row"
+				layout-align="center center"
+			>
+				<md-progress-circular
+					md-mode="indeterminate"
+					md-diameter="96"
+				></md-progress-circular>
+			</div>
+
+			<p
+				ng-if="websiteMap.error"
+				flex
+				layout="row"
+				layout-align="center center"
+				class="md-title error"
+			>
+				<span>Sorry, website location is not available.</span>
+			</p>
+
+			<div ng-show="websiteMap.ready" flex id="websiteMap"></div>
+
+		</div>
+
+	</div>
+
+	<div
+		flex
+		layout="column"
+	>
+		<h2 class="md-title">
+			See your current location on the map
+		</h2>
+		<md-button
+			class="md-accent md-raised"
+			ng-click="getLocation()"
+		>
+			My Location
+		</md-button>
+
+		<div
+			layout="row"
+			class="map-wrapper"
+		>
+
+			<div
+				ng-if="userMap.loading"
+				flex
+				layout="row"
+				layout-align="center center"
+			>
+				<md-progress-circular
+					md-mode="indeterminate"
+					md-diameter="96"
+				></md-progress-circular>
+			</div>
+
+			<p
+				ng-if="userMap.error"
+				flex
+				layout="row"
+				layout-align="center center"
+				class="md-title error"
+			>
+				<span>Sorry, your location is not available.</span>
+			</p>
+
+			<div ng-show="userMap.ready" flex id="userMap"></div>
+
+		</div>
+
+	</div>
+
+</div>
