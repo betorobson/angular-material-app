@@ -9,7 +9,6 @@
 		'MainController',
 
 		function(
-			$rootScope,
 			$scope,
 			$location,
 			$element,
