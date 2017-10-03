@@ -20,10 +20,10 @@
 		// directives
 		'directives.mainController',
 		'directives.navigation-bar',
-		'directives.side-menu'
+		'directives.side-menu',
 
 		// views
-		// 'views.home'
+		'views.home'
 
 	])
 
