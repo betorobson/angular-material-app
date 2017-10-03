@@ -3,14 +3,17 @@
 
 <div layout="row" flex>
 
+	<side-menu></side-menu>
+
 	<md-content
 		layout="column"
 		md-scroll-y
 		flex
 		ng-class="{
-			'not-scrollable' : $mdSidenav('sidemenu').isOpen()
+			'not-scrollable' : $mdSidenav('side-menu').isOpen()
 		}"
 	>
+		md-content
 	</md-content>
 
 </div>

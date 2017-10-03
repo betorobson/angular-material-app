@@ -4,21 +4,25 @@
 (function(){
 
 	angular.module('directives.navigation-bar',[
-		'factories.navigation-bar'
+		'factories.navigation-bar',
+		'factories.side-menu'
 	])
 
 	.controller('NavigationBarCtrl',
 
 		function(
 			$scope,
-			navigationBarFactory
+			navigationBarFactory,
+			sideMenuFactory
 		){
+
+			sideMenuFactory;
 
 			$scope.navigationBarTitle = navigationBarFactory.getTitle;
 
 			$scope.toggleSideMenu = function(){
 
-				console.log('toggleSideMenu');
+				sideMenuFactory.toggle();
 
 			};
 

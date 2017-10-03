@@ -12,6 +12,8 @@
 			$scope,
 			$location,
 			$element,
+			$timeout,
+			$mdMedia,
 			path
 		){
 
@@ -37,12 +39,22 @@
 
 			};
 
+			var setDeviceAttr = function(){
+				angular.element($element).attr(
+					'device',
+					$scope.mainController.device
+				);
+			};
+
 			// hold all main controller communication
 			$scope.mainController = {
 				go: go,
 				currentView: null,
-				setViewAttribute: setViewAttribute
+				setViewAttribute: setViewAttribute,
+				device: $mdMedia('gt-sm') ? 'desktop' : 'mobile'
 			};
+
+			$timeout(setDeviceAttr, 0);
 
 		}
 	)

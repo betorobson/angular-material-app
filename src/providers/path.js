@@ -16,8 +16,29 @@
 			// example:
 			// logout: {
 			// 	path: '/sair/',
-			// 	label: 'Sair'
+			// 	label: 'Sair',
+			//	icon: 'icon.svg'
+			//  sideMenu: true
 			// },
+
+			home: {
+				path: '/home/',
+				label: 'Home',
+				icon: 'home.svg',
+				sideMenu: true
+			},
+
+			about: {
+				path: '/about/',
+				label: 'About me',
+				icon: 'contact.svg',
+				sideMenu: true
+			},
+
+			no: {
+				path: '/no/',
+				label: 'No'
+			}
 
 		};
 
@@ -51,9 +72,13 @@
 
 		self.setCurrent = function(view){
 			self.currentKey = view || 'home';
-			if(rootScope.mainController.setViewAttribute){
-				rootScope.mainController.setViewAttribute();
-			}
+			// if(rootScope.mainController.setViewAttribute){
+			// 	rootScope.mainController.setViewAttribute();
+			// }
+		};
+
+		self.getPaths = function(){
+			return paths;
 		};
 
 		self.$get = function($rootScope){

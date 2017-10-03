@@ -1,7 +1,7 @@
 module.exports = function(gulp, modules){
 
 	var globMatchFiles = [
-		'assets/**/'
+		'assets/**/*'
 	];
 
 	gulp.task('assetsClean', function(){
