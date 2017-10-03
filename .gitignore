@@ -1,0 +1,12 @@
+_tmp/**
+_logs/**
+debug/**
+build/**
+
+node_modules/**
+
+bower_components/**
+
+.DS_Store
+.sass-cache/**
+npm-debug.log

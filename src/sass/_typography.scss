@@ -1,0 +1,13 @@
+
+@each $font in $fonts {
+
+	@font-face {
+		font-family: '#{nth($font,1)}';
+		src:	url($fontsSrc + "#{nth($font,2)}-webfont.woff2") format("woff2"),
+					url($fontsSrc + "#{nth($font,2)}-webfont.woff") format("woff");
+		font-weight: #{nth($font,3)};
+		font-style: #{nth($font,4)};
+    font-display: fallback;
+	}
+
+}
