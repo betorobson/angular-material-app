@@ -56,6 +56,17 @@
 
 			};
 
+			$scope.resetLocation = function(){
+				mapsService.setStatus(
+					$scope.userMap,
+					{
+						ready: false,
+						loading: false,
+						error: false
+					}
+				);
+			};
+
 			$scope.getWebsiteLocation = function(){
 
 				mapsService.setStatus(
