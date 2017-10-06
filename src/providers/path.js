@@ -14,36 +14,17 @@
 			// keys must be same name of views
 
 			// example:
-			// logout: {
-			// 	path: '/sair/',
-			// 	label: 'Sair',
-			//	icon: 'icon.svg'
-			//  sideMenu: true
-			// },
-
-			home: {
-				path: '/home/',
-				label: 'Home',
-				icon: 'home.svg',
-				sideMenu: true
-			},
-
-			about: {
-				path: '/about/',
-				label: 'About me',
-				icon: 'contact.svg',
-				sideMenu: true
-			},
-
-			no: {
-				path: '/no/',
-				label: 'No'
+			fool: {
+				path: '/fool/',
+				label: 'Fool',
+				icon: 'fool.svg',
+			 sideMenu: true
 			}
 
 		};
 
 		var self = this;
-		self.currentKey = 'home';
+		self.currentKey = 'fool';
 
 		self.get = function(view){
 			return paths[view];
@@ -71,7 +52,9 @@
 		};
 
 		self.setCurrent = function(view){
-			self.currentKey = view || 'home';
+			if(paths[view]){
+				self.currentKey = view;
+			}
 			rootScope.mainController.setViewAttribute();
 		};
 

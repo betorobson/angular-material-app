@@ -56,3 +56,5 @@ gulp.task('assets', getTask('assets') );
 gulp.task('indexHTML', getTask('indexhtml') );
 
 gulp.task('webserver', getTask('webserver') );
+
+require('./gulp-tasks/test.js');

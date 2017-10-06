@@ -6,7 +6,8 @@ module.exports = function(gulp, modules){
 		'src/config/*.js',
 		'src/**/!(*.config).js', // select modules declarations first
 		'src/**/*.config.js', // select modules config
-		'src/**/*.run.js' // select modules run
+		'src/**/*.run.js', // select modules run
+		'!src/**/*.spec.js' // exclude spec test files
 	];
 
 	var globMatchFilesAngularTemplates = [

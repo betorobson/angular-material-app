@@ -57,3 +57,8 @@ Files will be created at /debug folder
 $ gulp build
 ```
 Files will be created at /build folder
+
+## Testing
+```bash
+$ gulp test
+```
