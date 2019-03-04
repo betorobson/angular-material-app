@@ -1,6 +1,6 @@
 {
-  "name": "ui-challenge",
-  "description": "UI Challenge",
+  "name": "angularjs-material-seed-app",
+  "description": "AngularJS Material Seed App",
   "version": "1.0.0",
   "author": "Roberto Robson",
   "scripts": {
